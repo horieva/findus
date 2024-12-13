@@ -1,0 +1,381 @@
+/*
+*  Responsive
+*/
+@media (max-width: 1650px){
+    .hidden-1650{
+        display: none;
+    }
+}
+@media (max-width: 1280px){
+    .hidden-13inch{
+        display: none;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px){
+
+}
+@media (min-width: 1400px) and (max-width: 1650px){
+    
+}
+@media (min-width: 1200px) and (max-width: 1650px){
+    
+}
+
+@media (min-width: 768px){
+    .hidden-dots.slick-carousel .slick-dots{
+        display:none;
+    }
+}
+@media (min-width: 1200px){
+    .md-clearfix,
+    .job_listings .lg-clear-3:nth-child(3n + 1),
+    .job_listings .lg-clear-4:nth-child(4n + 1),
+    .job_listings .lg-clear-2:nth-child(2n + 1),
+    .lg-clearfix {
+        clear: both;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .job_listings .md-clear-3:nth-child(3n + 1),
+    .job_listings .md-clear-4:nth-child(4n + 1),
+    .job_listings .md-clear-2:nth-child(2n + 1),
+    .md-clearfix {
+        clear: both;
+    }
+}
+@media(min-width: 1200px){
+    .hidden-md-dots{
+        .slick-dots{
+            display: none !important;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .job_listings [class *="md-clear"]:nth-child(2n + 1),
+    .sm-clearfix{
+        clear: both;
+    } 
+}
+@media(min-width:992px){
+    .style-table{
+      display: table;
+      > div{
+        display: table-cell;
+        vertical-align:middle;
+        float: none;
+      }
+    }
+}
+@media (max-width: 1199px){
+    // edit profile
+    .widget-edit-profile{
+        .left-inner,
+        .right-inner{
+            width:100%;
+        }
+    }
+    // hours
+    .enter-hours-content-item{
+        .left-inner,
+        .hours-last {
+            padding-top:10px;
+        }
+    }
+
+    #back-to-top{
+        @include size(35px,35px);
+        line-height:30px;
+        font-size: 16px;
+        @include rtl-right(10px);
+        bottom:10px;
+        &.active{
+            @include opacity(0.7);
+            &:hover,&:focus{
+                @include opacity(1);
+            }
+        }
+    }
+    .apus-half-map-layout .job_filters{
+        padding: 15px;
+    }
+    .sidebar-detail-job{
+        .listing-hours .widget-title .hour-present,
+        .listing-business-info .widget-title .direction-map{
+            float: none !important;
+            margin: 7px 0 0;
+            width: 100%;
+        }
+    }
+    .widget-my-dashboard .item {
+        margin-bottom: $theme-margin / 2;
+    }
+}   
+@media(min-width: 768px) and (max-width: 1199px) {
+
+}
+@media (max-width: 991px){
+    // 991px
+    .main-results.p-results-mobile{
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        z-index: 5;
+        .job-manager-pagination{
+            margin:0;
+        }
+    }
+    .entry-header-right{
+        i{
+            margin:0 !important;
+        }
+        [class*="apus-bookmark"],
+        .share-popup,
+        .listing-reviews{
+            padding:10px;
+            .text,
+            .bookmark-text{
+                display: none;
+            }
+        }
+    }
+    .header-top-job .listing-logo{
+        padding:0 0 15px;
+    }
+    div.my-listing-item-wrapper{
+        .right-inner{
+            >  a,
+            .btn-status{
+                width: 100%;
+                text-align: center;
+            }
+            > a{
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .wrapper-profile{
+        .user-avatar{
+            width: 120px;
+            height: 120px;
+        }
+        .top-info{
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: $screen-xs-max) {
+
+    // 767px
+    .xs-clearfix {
+        clear: both;
+    }
+    .slick-carousel{
+        margin-left: -10px;
+        margin-right: -10px;
+        .slick-slide{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    // the end guitter
+    .comment-list .children{
+        @include rtl-padding-left(15px);
+    }
+    // comment form
+    .comment-list div.avatar{
+        width: 60px;
+        @include rtl-padding-right(15px);
+    }
+    .comment-list .the-comment img.avatar{
+        @include size(45px,45px);
+    }
+    // woocommerce
+    .woocommerce table.cart td.actions .coupon{
+        float: none;
+        padding-bottom: 15px;
+    }
+    // widget search job
+    .listingsearch-horizontal{
+        background:transparent;
+        .inner-content{
+            > div{
+                background: #fff;
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .search-submit{
+            width: 100%;
+            @include border-radius(0 !important);
+        }
+    }
+    // job list
+    div.job-list-style{
+        .listing-image{
+            height: 180px;
+            overflow: hidden;
+        }
+        .left-inner{
+            width: 100%;
+            .image-wrapper img{
+                width: 100%;
+            }
+        }
+        .right-inner {
+            width: 100%;
+            padding:15px 15px 0;
+        }
+    }
+    .widget-my-dashboard .item .right-inner{
+        font-size: 33px;
+    }
+    div.my-listing-item-wrapper{
+        .right-inner{
+            text-align: inherit;
+            padding-top: 10px;
+            >  a,
+            .btn-status{
+                width: auto;
+            }
+            .listing-status{
+                display: inline-block;
+            }
+        }
+    }
+    div.job_listing .listing-image .listing-review{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .my-listing-item-wrapper {
+        .view-detail{
+            display: none !important;
+        }
+    }
+    // messenger
+    .user-item {
+        .title-user{
+            font-size: 17px;
+        }
+        .media-right {
+            display: block;
+            padding:5px 0 0;
+        }
+    }
+    // submit job
+    #submit-job-form{
+        .field-region + .field-region{
+            margin-top: 15px;
+        }
+    }
+    .widget-view-user-profile .user-menu{
+        overflow: auto;
+        padding-bottom: 2px;
+        white-space: nowrap;
+        > li > a{
+            padding:15px 10px;
+        }
+    }
+    .widget-view-user-profile .inner-right{
+        @include rtl-text-align-right();
+        .btn{
+            padding: 5px 10px;
+            font-size: 13px;
+            min-width: 105px;
+            margin-bottom: 3px;
+        }
+    }
+    .user-heading .wrapper-title .author{
+        margin-bottom: 0;
+    }
+    .info-meta-comment{
+        > div{
+            width: 100%;
+        }
+        .action{
+            font-size: $font-size-base - 1;
+            > *:first-child{
+                @include rtl-margin-left(0);
+            }
+        }
+    }
+    // fix
+    .post-layout .description{
+        margin: 0 0 5px;
+    }
+    .post-list-item .entry-title{
+        margin-bottom: 7px;
+    }
+    .category-banner-list .banner-image img{
+        width: 100%;
+    }
+    .testimonials-item{
+        padding:0 30px;
+    }
+    .post-list-item{
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 480px) {
+    .widget-googlemap {
+        .apus-google-map{
+            height: 400px !important;
+        }
+    }
+}
+@media (max-width: 479px) {
+    .full-mb{
+        width: 100% !important;
+    }
+    .apus-single-listing .direction-map{
+        > span{
+            display: none;
+        }
+    }
+}
+
+// fix admin
+.admin-bar{
+    @media(min-width: 783px){
+        &.header_transparent{
+            .sticky-header,
+            #apus-header{
+                top: 32px;
+            }
+        } 
+    }
+    @media(max-width: 782px){
+        &.header_transparent{
+            .sticky-header,
+            #apus-header{
+                top: 46px;
+            }
+        }
+        .header-mobile{
+            top: 46px;
+            &.sticky-header{
+
+            }
+        }
+        // fix for sidebar
+        .sidebar{
+            top: 46px;
+        }
+    }
+}
+@media(min-width: 783px){
+    .admin-bar{
+        .header-mobile{
+            top: 32px;
+        }
+    }
+}
+@media(max-width: 600px){
+    .admin-bar{
+        .header-mobile.sticky-header{
+            top: 0;
+        }
+    }
+}
